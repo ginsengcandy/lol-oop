@@ -34,6 +34,8 @@ public class Main {
         System.out.println("=== 전투 종료 ===");
         System.out.println("=== 전투 결과 ===");
 
+        System.out.println("총 전투 횟수 : " + Champion.getBattleCount());
+
         System.out.println(garen);
         System.out.println(ahri);
         System.out.println(lux);

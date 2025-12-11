@@ -9,6 +9,7 @@ public class Ahri extends Champion implements RangedChampion{
     public void useQ(Champion target) {
         System.out.println(getName() + "의 연사(Q)!");
         target.takeDamage(getAttackDamage() * 2);
+        Champion.battleCount++;
     }
 
 //    @Override

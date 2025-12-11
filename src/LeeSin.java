@@ -9,6 +9,7 @@ public class LeeSin extends Champion implements MeleeChampion{
     public void useQ(Champion target) {
         System.out.println(getName() + "의 연발차기(Q)!");
         target.takeDamage(getAttackDamage() * 2);
+        Champion.battleCount++;
     }
 
     @Override

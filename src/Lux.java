@@ -9,6 +9,7 @@ public class Lux extends Champion implements RangedChampion{
     public void useQ(Champion target) {
         System.out.println(getName() + "의 연속타(Q)!");
         target.takeDamage(getAttackDamage() * 2);
+        Champion.battleCount++;
     }
 
     @Override
