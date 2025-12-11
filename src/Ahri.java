@@ -1,7 +1,8 @@
 public class Ahri extends Champion implements RangedChampion{
 
     public Ahri(String name){
-        super(name,570, 59, 28);
+        super(name, GameConstants.START_HP, GameConstants.START_ATTACK, GameConstants.START_DEFENSE);
+        System.out.println("오늘은 또 어떤 새로운 경험 앞에서, 당당히 맞서볼까?");
     }
 
     @Override
@@ -9,6 +10,12 @@ public class Ahri extends Champion implements RangedChampion{
         System.out.println(getName() + "의 연사(Q)!");
         target.takeDamage(getAttackDamage() * 2);
     }
+
+//    @Override
+//    public void levelup(){
+//        level++;
+//        System.out.println("레벨업!");
+//    }
 
     @Override
     public void kite(){
