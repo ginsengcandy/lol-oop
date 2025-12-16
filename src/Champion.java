@@ -36,7 +36,7 @@ public abstract class Champion {
         defense = GameConstants.START_DEFENSE;
     }
 
-    public final void levelup(){ //상속 자체가 불가하다
+    public final void levelUp(){ //상속 자체가 불가하다
         if(level>=GameConstants.MAX_LEVEL){
             System.out.println("레벨업 불가: 이미 최고 레벨입니다!");
         }
